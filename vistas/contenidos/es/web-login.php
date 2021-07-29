@@ -20,7 +20,7 @@
 <?php
     if(isset($_POST['dashboard_usuario']) && isset($_POST['dashboard_clave'])){
 		require_once "./controladores/loginControlador.php";
-        echo("Sesion iniciada")
+    
 		$ins_login= new loginControlador();
 		$ins_login->iniciar_sesion_administrador_controlador();
 	}
